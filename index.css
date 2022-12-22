@@ -1,0 +1,36 @@
+*{
+    background-color: black;
+}
+
+
+
+
+#loader{
+    height: 300px;
+    width: 300px;
+    border: 25px solid black;
+    border-radius: 100%;
+    border-top: 25px solid red;
+    border-bottom: 20px dotted blue;
+    animation: 1s spin linear infinite;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
+}
+h1{
+    height: 20px;
+    margin: 15px;
+    color: green;
+    padding:  100px;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+        filter: hue-rotate(360deg);
+    }
+}
